@@ -120,6 +120,7 @@ letter-spacing: 0.02em;
 margin-bottom: 48px;
 }
 
+
 .section-hero-button {
     color: #ffffff;
     background-color: #4D5AE5;
@@ -172,11 +173,10 @@ text-transform: capitalize;
 
 .section-goals-list {
     display: flex;
+    gap: 24px;
 }
 
 .section-goals-item {
-    padding: 120px 0;
-    margin-right: 24px;
 }
 
 .section-goals-item-title {
@@ -255,6 +255,18 @@ margin-bottom: 32px;
 .portfolio {
 padding-top: 120px;
 padding-bottom: 120px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.portfolio-item {
+    border-bottom: 1px solid #E7E9FC;
+    background: #FFF;
+    flex-basis: calc((100% - 48) / 3);
 }
 
 .portfolio-title {
