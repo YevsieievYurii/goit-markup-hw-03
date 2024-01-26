@@ -30,6 +30,10 @@ display: flex;
 align-items: center;
 }
 
+img {
+    display: block;
+}
+
 /* ======HEADER======== */
 
 .header {
@@ -111,7 +115,9 @@ color: #404BBF;
 }
 
 
+
 .section-hero-title {
+max-width: 496px;
 color: #FFF;
 text-align: center;
 font-size: 56px;
@@ -122,6 +128,10 @@ margin-bottom: 48px;
 
 
 .section-hero-button {
+    display: block;
+    min-width: 196px;
+    height: 56px;
+    border: none;
     color: #ffffff;
     background-color: #4D5AE5;
     font-family: "Roboto", sans-serif;
@@ -174,6 +184,7 @@ text-transform: capitalize;
 .section-goals-list {
     display: flex;
     gap: 24px;
+    flex-basis: calc((100% - 72px) / 4)
 }
 
 .section-goals-item {
@@ -209,6 +220,8 @@ padding-bottom: 120px;
 .team-list {
     display: flex;
     gap: 24px;
+    flex-basis: calc((100% - 72px) / 4)
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -223,11 +236,14 @@ margin-bottom: 72px;
 
 .team-item {
 background-color: #FFFFFF 
-}
-
-.team-img {
 margin-bottom: 32px;
 }
+
+
+.text-container {
+padding: 32px 0;
+}
+
 
 .team-name {
     color: #2E2F42;
@@ -263,8 +279,13 @@ padding-bottom: 120px;
     gap: 48px 24px;
 }
 
-.portfolio-item {
+.app-portfolio {
+    padding: 32px 16px;
     border-bottom: 1px solid #E7E9FC;
+    border-top: none;
+}
+
+.portfolio-item {
     background: #FFF;
     flex-basis: calc((100% - 48) / 3);
 }
@@ -285,6 +306,7 @@ padding-bottom: 120px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -305,6 +327,7 @@ padding-bottom: 100px;
 }
 
 .footer-logo {
+    display: inline-block;
     color: #4D5AE5;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
