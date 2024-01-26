@@ -129,7 +129,7 @@ margin-bottom: 48px;
 
 .section-hero-button {
     display: block;
-    min-width: 196px;
+    min-width: 169px;
     height: 56px;
     border: none;
     color: #ffffff;
@@ -184,10 +184,10 @@ text-transform: capitalize;
 .section-goals-list {
     display: flex;
     gap: 24px;
-    flex-basis: calc((100% - 72px) / 4)
 }
 
 .section-goals-item {
+    flex-basis: calc((100% - 72px) / 4)
 }
 
 .section-goals-item-title {
@@ -221,7 +221,6 @@ padding-bottom: 120px;
     display: flex;
     gap: 24px;
     flex-basis: calc((100% - 72px) / 4)
-    border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -237,6 +236,7 @@ margin-bottom: 72px;
 .team-item {
 background-color: #FFFFFF 
 margin-bottom: 32px;
+border-radius: 0px 0px 4px 4px;
 }
 
 
